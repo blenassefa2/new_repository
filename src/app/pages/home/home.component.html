@@ -1,0 +1,423 @@
+<section
+  id="home"
+  class="  relative"
+>
+
+  <div class="  w-full z-3">
+    <div
+      class="max-md:bg-black mx-auto max-w-[1680px] relative w-full h-full max-md:bg-opacity-80 max-md:px-8 px-10   max-sm:pt-5"
+    >
+      <!-- <app-registration
+        [showModal]="showIndividualRegistrationModal"
+        (closeModalEvent)="onHideModal()"
+      ></app-registration>
+      <app-mentors-registration
+        [registrationLink]="mentorsRegistrationLink"
+        [showModal]="showMentorsModal"
+        (closeModalEvent)="onHideModal()"
+      ></app-mentors-registration>
+      <app-advisors-registration
+        [registrationLink]="advisorsRegistrationLink"
+        [showModal]="showAdvisorsModal"
+        (closeModalEvent)="onHideModal()"
+      ></app-advisors-registration>
+      <app-team-registration
+        [showModal]="showTeamRegistrationModal"
+        (closeModalEvent)="onHideModal()"
+      ></app-team-registration>
+      <div
+        (click)="scrollDown()"
+        class="rounded-full max-md:hidden text-white border-2 p-2 animate-bounce z-40 cursor-pointer mx-auto absolute bottom-4 left-1/2"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-8 h-8"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+      </div> -->
+      <!-- bg-[#002145] -->
+      <!-- <app-landing></app-landing> -->
+      <div class=" max-md:mt-12 m-auto flex justify-center ">
+        <div
+        id="home_component"
+          class="p-3 relative flex flex-col max-md:justify-between md:flex-row justify-center"
+        >
+          <div
+          
+            class="bg_svg flex-1 mr-4 flex flex-col  items-start md:overflow-auto  mb-5 h-full"
+          >
+            <div >
+              <h1
+              [ngClass]="{ 'heading': animated }"
+                class="opacity-0 px-2 text-left font-poppins max-md:text-2xl sm:text-[50px] max-sm:font-medium font-bold text-gray-200 rounded"
+              >
+              A2SV Hackathon, 2023
+              </h1>
+              <h1
+              [ngClass]="{ 'description': animated }"
+                class="opacity-0 px-2 text-left text-lg font-font-poppins max-md:text-xl max-sm:font-medium font-semibold text-gray-200 rounded"
+              >
+                Pushing Boundaries with Generative AI!
+              </h1>
+            </div>
+            <div class="relative md:mr-10">
+             
+              <div class="text-gray-300 px-2 font-light text-lg leading-relaxed text-left justifyb py-4 rounded bg-blue-950 bg-opacity-50">
+                <p 
+                [ngClass]="{ 'description': animated }"
+                class="my-3 opacity-0">
+                  A2SV Generative AI for Africa Hackathon, the largest in Africa
+                </p>
+                <div [ngClass]="{ 'description': animated }" class="opacity-0 flex items-start text-[15px] py-2 ml-3"><img src="assets/star.svg" alt="star" class="pr-5"/><p class="">Attracted  <strong class="font-bold text-transparent bg-gradient-to-r from-indigo-600 to to-pink-500 bg-clip-text">3,700+</strong> registrations from students across <strong class="font-bold text-transparent bg-gradient-to-r from-indigo-600 to to-pink-500 bg-clip-text">587</strong> universities and high schools in <strong class="font-bold text-transparent bg-gradient-to-r from-indigo-600 to to-pink-500 bg-clip-text"> 47</strong> African countries.</p></div>
+                <div [ngClass]="{ 'description': animated }" class="opacity-0 flex items-start text-[15px] py-2 ml-3"><img src="assets/star.svg" alt="star" class="pr-5"/><p class="">Generated <strong class="font-bold text-transparent bg-gradient-to-r from-indigo-600 to to-pink-500 bg-clip-text">500+</strong> project ideas, leading to <strong class="font-bold text-transparent bg-gradient-to-r from-indigo-600 to to-pink-500 bg-clip-text">40</strong> projects in the semi-finals.</p></div>
+                <div [ngClass]="{ 'description': animated }" class="opacity-0 flex items-start text-[15px] py-2 ml-3"><img src="assets/star.svg" alt="star" class="pr-5"/><p class="">The Grand Finale in Ethiopia featured <strong class="font-bold text-transparent bg-gradient-to-r from-indigo-600 to to-pink-500 bg-clip-text">9</strong> exceptional finalist teams from Tunisia, Kenya, Ethiopia, Namibia, Algeria, and Cameroon.</p></div>
+                <div [ngClass]="{ 'description': animated }" class="opacity-0 flex items-start text-[15px] py-2 ml-3"><img src="assets/star.svg" alt="star" class="pr-5"/><p class="">Finalist teams showcased their projects publicly, presenting to a jury and potential investors.</p></div>
+                <!-- <div class="flex items-start text-[15px] py-2 ml-3"><img src="assets/star.svg" alt="star" class="pr-5"/><p class="">Top 3 winners were awarded in the Grand Finale.</p></div> -->
+              </div>
+              <!-- <p class="text-gray-300 px-2 font-light text-lg leading-relaxed text-left justifyb py-4 rounded bg-blue-950 bg-opacity-50">Featured eight exceptional finalist teams from Tunisia, Kenya, Ethiopia, Namibia, Algeria, and Cameroon.</p>
+              <p class="text-gray-300 px-2 font-light text-lg leading-relaxed text-left justifyb py-4 rounded bg-blue-950 bg-opacity-50">Finalist teams showcased their projects publicly, presenting to a jury and potential investors.</p> -->
+              
+              <!-- <button
+              [ngClass]="{ 'description': animated }"
+                (click)="openModal($event)"
+                class="opacity-0 my-3 mx-2 px-9 py-3 rounded-xl bg-white id"
+              >
+                <strong
+                  class="font-bold text-transparent bg-gradient-to-r from-indigo-600 to to-pink-500 bg-clip-text"
+                  >Join Us</strong
+                >
+              </button> -->
+              <!-- <p
+                class="text-gray-300 px-2 font-light text-lg leading-relaxed text-left py-4 rounded bg-slate-900 bg-opacity-50"
+              >
+                Join us. Together, we can shape a future where innovation
+                uplifts communities across the continent.
+              </p> -->
+              <!-- Hacakthon link reference -->
+              <!-- <a
+            (click)="scrollToSection('bigVideo')"
+            class="md:absolute md:bottom-[-30px] md:left-0 mt-5 mb-1"
+          >
+            <div *ngIf="!registrationButtonVisible" class="box relative">
+              <svg
+                class="absolute top-0 right-0 text-red-500 w-4 h-4"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 .5a.5.5 0 01.5-.5h3a.5.5 0 010 1H9v1.07a7.001 7.001 0 013.274 12.474l.601.602a.5.5 0 01-.707.708l-.746-.746A6.97 6.97 0 018 16a6.97 6.97 0 01-3.422-.892l-.746.746a.5.5 0 01-.707-.708l.602-.602A7.001 7.001 0 017 2.07V1h-.5A.5.5 0 016 .5zm2.5 5a.5.5 0 00-1 0v3.362l-1.429 2.38a.5.5 0 10.858.515l1.5-2.5A.5.5 0 008.5 9V5.5zM.86 5.387A2.5 2.5 0 114.387 1.86 8.035 8.035 0 00.86 5.387zM11.613 1.86a2.5 2.5 0 113.527 3.527 8.035 8.035 0 00-3.527-3.527z"
+                />
+              </svg>
+              <p>
+                <strong
+                  class="font-bold text-transparent bg-gradient-to-r from-indigo-600 to to-pink-500 bg-clip-text hover:underline hover:cursor-pointer"
+                >
+                  Hackathon Highlights
+                </strong>
+                >
+              </p>
+            </div>
+          </a> -->
+            </div>
+
+            <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full  z-30">
+        <div *ngFor="let days of day_desc; let j = index " class=" ">
+          <div class="p-4 bg-slate-700 bg-opacity-50 rounded mt-6 text-center   h-full  text-gray-300 ">
+            <h1 class="w-full text-center flex flex-row justify-start items-center mb-2"><span><svg width="30" height="30" viewBox="0 0 53 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M27.2629 0.47879L34.7928 15.8909C34.9165 16.1448 35.1558 16.32 35.4328 16.3606L52.2707 18.8322C52.9685 18.9344 53.2471 19.8008 52.742 20.298L40.5586 32.2943C40.3578 32.4914 40.2663 32.7762 40.3136 33.0544L43.1901 49.994C43.3089 50.6956 42.5798 51.231 41.9558 50.8992L26.8959 42.9011C26.6478 42.7697 26.3522 42.7697 26.1041 42.9011L11.0442 50.8992C10.4202 51.2302 9.69109 50.6956 9.80994 49.994L12.6864 33.0544C12.7338 32.7753 12.6422 32.4914 12.4414 32.2943L0.257961 20.298C-0.247141 19.8008 0.0315084 18.9352 0.729337 18.8322L17.5672 16.3606C17.8442 16.32 18.0835 16.144 18.2072 15.8909L25.7371 0.47879C26.0487 -0.159597 26.9505 -0.159597 27.2621 0.47879H27.2629Z" fill="#F3CC30"/>
+              <path d="M26.9992 4L20.0191 16.7933C19.6532 17.4644 18.9499 17.9125 18.1555 17.9805L3 19.2894L19.0125 19.9976C20.0291 20.0426 20.9605 19.4593 21.313 18.5559L27 4H26.9992Z" fill="#F7DB5E"/>
+              <path d="M10.3421 48.0444L10.0128 49.9938C9.89449 50.6956 10.6202 51.231 11.2412 50.8992L26.2304 42.9001C26.4774 42.7687 26.7715 42.7687 27.0185 42.9001L42.0077 50.8992C42.6287 51.231 43.3544 50.6956 43.2361 49.9938L40.3732 33.0522C40.3261 32.7731 40.4172 32.4892 40.617 32.292L52.7433 20.2943C53.246 19.797 52.9686 18.9313 52.2741 18.8283L46.6609 18C37.5822 34.5376 23.68 43.2449 10.3421 48.0444Z" fill="#EDBD31"/>
+              </svg></span>
+              <span class="ml-3">{{days.day }}</span>
+              </h1>
+            <p class="text-sm text-left">{{days.desc}}</p>
+          </div>
+        </div>
+      </div> -->
+            <div *ngIf="registrationButtonVisible" class="box relative">
+              <svg
+                class="absolute top-0 right-0 text-red-500 w-4 h-4"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 .5a.5.5 0 01.5-.5h3a.5.5 0 010 1H9v1.07a7.001 7.001 0 013.274 12.474l.601.602a.5.5 0 01-.707.708l-.746-.746A6.97 6.97 0 018 16a6.97 6.97 0 01-3.422-.892l-.746.746a.5.5 0 01-.707-.708l.602-.602A7.001 7.001 0 017 2.07V1h-.5A.5.5 0 016 .5zm2.5 5a.5.5 0 00-1 0v3.362l-1.429 2.38a.5.5 0 10.858.515l1.5-2.5A.5.5 0 008.5 9V5.5zM.86 5.387A2.5 2.5 0 114.387 1.86 8.035 8.035 0 00.86 5.387zM11.613 1.86a2.5 2.5 0 113.527 3.527 8.035 8.035 0 00-3.527-3.527z"
+                />
+              </svg>
+              <p class="text-white">
+                Registration Deadline is Extended by
+                <strong
+                  class="font-bold text-transparent bg-gradient-to-r from-indigo-600 to to-pink-500 text-2xl bg-clip-text"
+                  >One</strong
+                >
+                More Day!
+              </p>
+            </div>
+            <!--  href = 'https://www.youtube.com/watch?v=a7bEAVJo7DU' target="_blank" -->
+
+            <div *ngIf="countDownVisible">
+              <app-count-down></app-count-down>
+            </div>
+            <p *ngIf="registrationButtonVisible" class="text-gray-300 text-lg">
+              Get your spot in the Hackathon
+            </p>
+            <div class="flex justify-between items-center">
+              <button
+                *ngIf="registrationButtonVisible"
+                onClick="register_modal.showModal()"
+                class="inline-flex disabled:bg-gray-500 text-black bg-white border-0 max-sm:px-4 py-2 px-6 focus:outline-none hover:drop-shadow-xl hover:bg-gray-300 rounded max-sm:text-sm text-lg"
+              >
+                Register Now
+              </button>
+              <dialog
+                *ngIf="showRegistrationModal"
+                id="register_modal"
+                class="modal mt-4"
+              >
+                <form
+                  method="dialog"
+                  class="modal-box w-11/12 max-sm:w-full max-sm:mx-2 max-w-5xl bg-gray-900"
+                >
+                  <section class="text-gray-400 bg-gray-900 body-font">
+                    <div class="container p-4">
+                      <div class="flex flex-wrap justify-center -m-4">
+                        <div class="p-4 lg:w-1/3">
+                          <div
+                            class="h-full flex flex-col justify-between bg-gray-800 bg-opacity-40 px-8 py-8 rounded-lg overflow-hidden relative"
+                          >
+                            <div>
+                              <p class="leading-relaxed mb-3">
+                                Don't have a team yet? Register individually and
+                                we'll match you with other talented developers,
+                                designers, and problem solvers.
+                              </p>
+                            </div>
+                            <div
+                              class="flex w-full flex-wrap space-y-4 justify-center items-end"
+                            >
+                              <a
+                                (click)="onRegisterIndividual()"
+                                class="rounded-full cursor-pointer modal-action px-5 py-2.5 overflow-hidden group bg-gradient-to-r from-indigo-600 to-pink-500 relative hover:bg-gradient-to-r hover:from-indigo-600 hover:to-pink-500 text-white transition-all ease-out duration-300"
+                              >
+                                <span
+                                  class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"
+                                ></span>
+                                <span class="relative"
+                                  >Register Individually</span
+                                >
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-4 lg:w-1/3">
+                          <div
+                            class="h-full flex flex-col justify-between bg-gray-800 bg-opacity-40 px-8 py-8 rounded-lg overflow-hidden relative"
+                          >
+                            <div>
+                              <p class="leading-relaxed mb-3">
+                                Already have a team? If you are the captain,
+                                register your team and start working on your
+                                project today.
+                              </p>
+                            </div>
+                            <div
+                              class="flex w-full flex-wrap space-y-4 justify-center items-end modal-action"
+                            >
+                              <a
+                                (click)="onRegisterTeam()"
+                                class="rounded-full cursor-pointer px-5 py-2.5 overflow-hidden group bg-gradient-to-r from-indigo-600 to-pink-500 relative hover:bg-gradient-to-r hover:from-indigo-600 hover:to-pink-500 text-white transition-all ease-out duration-300"
+                              >
+                                <span
+                                  class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"
+                                ></span>
+                                <span class="relative">Register as a Team</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <div class="modal-action">
+                    <button class="btn">Close</button>
+                  </div>
+                </form>
+              </dialog>
+
+              <!-- <button
+          onClick="get_involved_modal.showModal()"
+          class=" inline-flex text-white max-sm:px-4 py-2 mt-20 px-6 border border-white hover:text-indigo-600 hover:border-indigo-600 max-sm:text-sm rounded text-lg"
+        >
+          Get Involved
+        </button> -->
+              <dialog
+                *ngIf="showGetInvolvedModal"
+                id="get_involved_modal"
+                class="modal mt-4"
+              >
+                <form
+                  method="dialog"
+                  class="modal-box w-11/12 max-sm:w-full max-sm:mx-2 max-w-5xl bg-gray-900"
+                >
+                  <section class="text-gray-400 bg-gray-900 body-font">
+                    <div class="container p-4">
+                      <div class="flex flex-wrap -m-4">
+                        <div class="p-4 lg:w-1/3">
+                          <div
+                            class="h-full flex flex-col justify-between bg-gray-800 bg-opacity-40 px-8 py-8 rounded-lg overflow-hidden relative"
+                          >
+                            <div>
+                              <h1
+                                class="title-font sm:text-2xl text-xl font-medium text-white mb-3 text-center"
+                              >
+                                Be A Mentor
+                              </h1>
+                              <p class="leading-relaxed mb-3">
+                                Inspire innovation during the quarter-finals, a
+                                3-day virtual hackathon from 19-20 August, 2023.
+                                Your guidance will enable participants to
+                                develop their skills and ideas.
+                              </p>
+                            </div>
+                            <div
+                              class="flex w-full flex-wrap space-y-4 justify-center items-end"
+                            >
+                              <a
+                                (click)="onShowMentorsModal()"
+                                class="rounded-full cursor-pointer modal-action px-5 py-2.5 overflow-hidden group bg-gradient-to-r from-indigo-600 to-pink-500 relative hover:bg-gradient-to-r hover:from-indigo-600 hover:to-pink-500 text-white transition-all ease-out duration-300"
+                              >
+                                <span
+                                  class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"
+                                ></span>
+                                <span class="relative">Be A Mentor</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-4 lg:w-1/3">
+                          <div
+                            class="h-full flex flex-col justify-between bg-gray-800 bg-opacity-40 px-8 py-8 rounded-lg overflow-hidden relative"
+                          >
+                            <div>
+                              <h1
+                                class="title-font sm:text-2xl text-xl font-medium text-white mb-3 text-center"
+                              >
+                                Be An Advisor
+                              </h1>
+                              <p class="leading-relaxed mb-3">
+                                Provide bi-weekly feedback to participants
+                                throughout the semi-finals, a two-month-long
+                                hacker league from Sep 19, 2023 - Oct 28, 2023.
+                                Your insights will sharpen the competitive edge
+                                of the event.
+                              </p>
+                            </div>
+                            <div
+                              class="flex w-full flex-wrap space-y-4 justify-center items-end modal-action"
+                            >
+                              <a
+                                (click)="onShowAdvisorsModal()"
+                                class="rounded-full cursor-pointer px-5 py-2.5 overflow-hidden group bg-gradient-to-r from-indigo-600 to-pink-500 relative hover:bg-gradient-to-r hover:from-indigo-600 hover:to-pink-500 text-white transition-all ease-out duration-300"
+                              >
+                                <span
+                                  class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"
+                                ></span>
+                                <span class="relative">Be An Advisor</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-4 lg:w-1/3">
+                          <div
+                            class="h-full flex flex-col justify-between bg-gray-800 bg-opacity-40 px-8 py-8 rounded-lg overflow-hidden relative"
+                          >
+                            <div>
+                              <h1
+                                class="title-font sm:text-2xl text-xl font-medium text-white mb-3 text-center"
+                              >
+                                Sponsor Us
+                              </h1>
+                              <p class="leading-relaxed mb-3">
+                                Enhance your visibility within the African tech
+                                community, connect with A2SV talent, and fuel
+                                the rise of AI innovation in the region through
+                                your sponsorship
+                              </p>
+                            </div>
+                            <div
+                              class="flex w-full flex-wrap space-y-4 justify-center items-end"
+                            >
+                              <a
+                                href="mailto:contact@a2sv.org"
+                                class="rounded-full px-5 py-2.5 overflow-hidden group bg-gradient-to-r from-indigo-600 to-pink-500 relative hover:bg-gradient-to-r hover:from-indigo-600 hover:to-pink-500 text-white transition-all ease-out duration-300"
+                              >
+                                <span
+                                  class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"
+                                ></span>
+                                <span class="relative">Contact Us</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <div class="modal-action">
+                    <button class="btn">Close</button>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+
+            <!-- <a
+        (click)="scrollToSection('workshops')"
+        class=" hover:underline hover:text-indigo-700 text-xl cursor-pointer my-10"
+        > <strong
+        class="font-bold text-transparent bg-gradient-to-r from-indigo-600 to to-pink-500 bg-clip-text"
+        >Our workshops are available now.</strong ></a
+      > -->
+          </div>
+         
+          <div
+
+          [ngClass]="{ 'description': animated }"
+            class="opacity-0 border h-full rounded-lg flex-1 lg:flex-grow flex justify-start"
+          >
+            <!-- <app-winner></app-winner> -->
+
+            <div
+             class="h-full w-full">
+              <iframe
+                id="videoIframe"
+                class="h-full w-full bg-black object-center object-contain rounded-2xl"
+                src="https://www.youtube.com/embed/q1HUaiF-1CA?si=rYSUUkaMH2P-rhy4"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+                allowfullscr
+              ></iframe>
+            </div>
+
+          </div>
+        </div>
+        <!-- <div class="flex flex-wrap flex-1 relative gap-x-3 max-lg:hidden h-full">
+        <img
+          src="assets/A2SV%20Hackathon%20(11).png"
+          alt=""
+          class="h-full w-full object-contain object-center"
+        />
+      </div> -->
+      </div>
+    </div>
+  </div>
+</section>

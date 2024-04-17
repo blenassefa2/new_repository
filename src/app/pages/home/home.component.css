@@ -1,0 +1,156 @@
+.box {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 8px 12px;
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.01);
+}
+.box::after {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.9) translateZ(0);
+  filter: blur(15px);
+  background: linear-gradient(
+    to left,
+    #ff5770,
+    #e4428d,
+    #c42da8,
+    #9e16c3,
+    #6501de,
+    #9e16c3,
+    #c42da8,
+    #e4428d,
+    #ff5770
+  );
+  background-size: 200% 200%;
+  animation: animateGlow 1.25s linear infinite;
+}
+.overflow-auto::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+.overflow-auto {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+.bg_svg::-webkit-scrollbar {
+  width: 4px; /* Set the width of the scrollbar */
+  height : 4px;
+}
+
+/* Track */
+.bg_svg::-webkit-scrollbar-track {
+  background: white; /* Color of the scrollbar track */
+}
+
+/* Handle */
+.bg_svg::-webkit-scrollbar-thumb {
+  background: yellow; /* Color of the scrollbar handle */
+}
+/* .bg_svg::-webkit-scrollbar  {
+  display: none;
+}
+.bg_svg {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+} */
+.bg-custom{
+  background-size: 100% 70vh; /* Set the width to 100% and height to 70% */
+  background-position: top;
+}
+.bg_svg{
+ /* Set your desired height */
+  background-image: url('/assets/back.svg');
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat; 
+  background-position: center;
+  
+}
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+@keyframes tilt-n-move-shaking {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  75% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+.bg-opacity {
+  background-color: rgba(
+    156,
+    163,
+    175,
+    0.5
+  ); /* Adjust the color and opacity as needed */
+}
+
+@keyframes FromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* Animation for headings */
+@keyframes fadeInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation for description */
+@keyframes fadeInFromLeftDelayed {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* This is animation for Landing page*/
+.heading_bg {
+  animation: FromLeft 1s ease-in-out forwards 0.5s;
+}
+.heading {
+  animation: fadeInFromLeft 1s ease-in-out forwards 1s; /* Duration for heading animation */
+}
+
+.description {
+  animation: fadeInFromLeftDelayed 1s ease-in-out forwards 1.5s; /* Duration and delay for description animation */
+}

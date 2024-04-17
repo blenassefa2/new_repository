@@ -1,0 +1,256 @@
+<section class="m-auto md:px-20 px-4">
+  <div class="container flex items-center justify-center">
+    <button class="mt-2" (click)="toggleCards()">
+      <span class="flex items-center">
+        <p
+          class="sm:text-4xl text-center text-2xl pt-8 mb-12 font-bold text-transparent bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text"
+        >
+          Our Workshop Summary
+        </p>
+        <svg
+          *ngIf="!showCards"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-8 h-8 mb-3 ml-2 text-pink-400"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+
+        <svg
+          *ngIf="showCards"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-8 h-8 mb-3 ml-2 text-pink-400 transform rotate-180"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+      </span>
+    </button>
+  </div>
+
+  <p
+    class="lg:w-2/3 mx-auto leading-relaxed text-base text-white text-justify justify-between"
+  >
+    Unlock valuable data and information in the form of videos used by our
+    participants during the hackathon. Gain profound insights into hackathon
+    dynamics, generative AI applications, and implementation strategies through
+    our exclusive workshop videos. See the intersection of theory and practice
+    with valuable insights from industry leaders, helping you prepare
+    effectively for building tech projects.
+  </p>
+
+  <div *ngIf="showCards">
+    <div
+      class="grid grid-cols-1 max-sm:px-0 px-12 md:grid-cols-3 sm:grid-cols-2 gap-2"
+    >
+      <div class="container px-5 py-5 mx-auto">
+        <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+          <iframe
+            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            src="https://www.youtube.com/embed/7FlRWgVGmUA?si=xT8jLc1Bi-W9XmL_"
+          ></iframe>
+          <div class="p-6">
+            <h1 class="title-font text-lg font-medium text-white mb-3">
+              Innovative Idea Generation
+            </h1>
+            <p class="leading-relaxed mb-3 text-gray-600">
+              Learn to brainstorm and refine groundbreaking ideas for project
+              success. Grasp the role of innovative ideas, harness effective
+              brainstorming techniques, apply SWOT analysis and feasibility
+              checks, and adopt a customer-oriented approach.
+            </p>
+            <a class="inline-flex items-center">
+              <img
+                alt="blog"
+                src="/assets/yekta.jpg"
+                class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center"
+              />
+              <span class="flex-grow flex flex-col pl-3">
+                <span class="title-font font-medium text-gray-300">
+                  Yekta Ozcan Ozozer: Managing Partner @ Sürekli Gelişim
+                  Danışmanlık ve Eğitim Ltd.</span
+                >
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container px-5 py-5 mx-auto">
+        <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+          <iframe
+            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            src="https://www.youtube.com/embed/Fpu3q39tZGU?si=40i-795A9JIblpUj"
+          ></iframe>
+          <div class="p-6">
+            <h1 class="title-font text-lg font-medium text-white mb-3">
+              Hackathon Dynamics
+            </h1>
+            <p class="leading-relaxed mb-3 text-gray-600">
+              Prepare for the upcoming hackathon by understanding its concept
+              and dynamics. Key learnings include grasping the hackathon stages
+              and structure, mastering time management and team collaboration,
+              and avoiding common pitfalls.
+            </p>
+            <a class="inline-flex items-center">
+              <img
+                alt="blog"
+                src="https://dummyimage.com/101x101"
+                class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center"
+              />
+              <span class="flex-grow flex flex-col pl-3">
+                <span class="title-font font-medium text-gray-300"
+                  >Ekin Tas: Core Team Member @ BUchain | Boğaziçi Blockchain
+                  Society
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container px-5 py-5 mx-auto">
+        <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+          <iframe
+            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            src="https://www.youtube.com/embed/bpDzSW-WwZE?si=YKopysJQsRQE93yr"
+          ></iframe>
+          <div class="p-6">
+            <h1 class="title-font text-lg font-medium text-white mb-3">
+              Generative AI and its applications
+            </h1>
+            <p class="leading-relaxed mb-3 text-gray-600">
+              Gain a foundational understanding of Generative AI and its
+              practical applications. Key learnings include grasping the
+              principles and significance of Generative AI and exploring
+              real-world applications, particularly in addressing African
+              challenges.
+            </p>
+            <a class="inline-flex items-center">
+              <img
+                alt="blog"
+                src="assets/ismail.jpg"
+                class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center"
+              />
+              <span class="flex-grow flex flex-col pl-3">
+                <span class="title-font font-medium text-gray-300"
+                  >Ismail Duran: Chief Technology Officer @ Logo Yazılım</span
+                >
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container px-5 py-5 mx-auto">
+        <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+          <iframe
+            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            src="https://www.youtube.com/embed/wj8qT0NNtoU?si=y_COwNar_lqlKCmq"
+          ></iframe>
+          <div class="p-6">
+            <h1 class="title-font text-lg font-medium text-white mb-3">
+              Innovative Idea Generation Activity
+            </h1>
+            <p class="leading-relaxed mb-3 text-gray-600">
+              Empower yourself to identify promising markets, leverage growth
+              opportunities, and navigate submarkets for success. Key elements
+              include understanding market selection, submarket dynamics,
+              practical exercises, and thriving strategies.
+            </p>
+            <a class="inline-flex items-center">
+              <img
+                alt="blog"
+                src="/assets/sinan.jpg"
+                class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center"
+              />
+              <span class="flex-grow flex flex-col pl-3">
+                <span class="title-font font-medium text-gray-300"
+                  >Sinan Sarioglu: Founding Partner @ Horizon Labs</span
+                >
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container px-5 py-5 mx-auto">
+        <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+          <iframe
+            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            src="https://www.youtube.com/embed/Co0HWRINFt8?si=5Q7TNVnGFMGn7twc"
+          ></iframe>
+          <div class="p-6">
+            <h1 class="title-font text-lg font-medium text-white mb-3">
+              Generative AI Implementation
+            </h1>
+            <p class="leading-relaxed mb-3 text-gray-600">
+              Step into the world of Generative AI and unlock its potential!
+              This interactive workshop guides you through integrating diverse
+              applications like ChatGPT and Hugging Face. Gain hands-on skills
+              to connect platforms, implement functions, and explore the
+              possibilities of Generative AI.
+            </p>
+            <a class="inline-flex items-center">
+              <img
+                alt="blog"
+                src="/assets/samet.png"
+                class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center"
+              />
+              <span class="flex-grow flex flex-col pl-3">
+                <span class="title-font font-medium text-gray-300"
+                  >Samet Taspinar: Sr. ML Scientist @ Overjet</span
+                >
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container px-5 py-5 mx-auto">
+        <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+          <iframe
+            class="lg:h-48 md:h-36 w-full object-cover object-center"
+            src="https://www.youtube.com/embed/cLVH43V7WiI?si=lbV_yEG_MSQulKm9"
+          ></iframe>
+          <div class="p-6">
+            <h1 class="title-font text-lg font-medium text-white mb-3">
+              How to win a Hackathon with Design Thinking?
+            </h1>
+            <p class="leading-relaxed mb-3 text-gray-600">
+              Dive into Design Thinking for Hackathons! Learn how to tailor
+              solutions directly to Africa’s real-world challenges. Ready to
+              stand out and make an impact?
+            </p>
+            <a class="inline-flex items-center">
+              <img
+                alt="blog"
+                src="/assets/Gokhan.jpg"
+                class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center"
+              />
+              <span class="flex-grow flex flex-col pl-3">
+                <span class="title-font font-medium text-gray-300"
+                  >Gokhan Celiker: Founder & CEO of Global Champions</span
+                >
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

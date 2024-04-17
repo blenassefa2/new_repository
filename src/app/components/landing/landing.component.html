@@ -1,0 +1,64 @@
+<div class=" min-h-screen   pt-[130px] lg:pt-[100px]">
+  <div
+  class="min-h-[80vh]   px-20  flex flex-col justify-center items-center "
+>
+  <div class="flex flex-col md:flex-row justify-center  text-white">
+    <section class="left flex-1 flex flex-col justify-start  items-start py-4 ">
+      <h1
+        class="text-xl md:text-4xl lg-text-5xl text-left font-bold leading-relaxed mb-5"
+      >
+        AI for Impact - Solving Africa's Challenges
+      </h1>
+      <button
+      (click)="setActiveButton('signup')"
+      class="text-sm px-4 py-2 rounded-full transition-transform duration-300 ease-in-out  hover:bg-purple-600  border hover:border-none    {{
+        activeButton === 'signup' ? 'bg-purple-500 ' : ''
+      }}"
+    >
+      Sign Up for Event Updates
+    </button>
+    </section>
+    <section class="right flex-1 md:h-full md:px-5 mb-10">
+      <p class="text-left my-4 tracking-tight leading-a.5" >
+        Get ready to revolutionize AI in Africa! Dive into the world of
+        innovation as participants submit cutting-edge project ideas, harnessing
+        AI's power to tackle real-world challenges head-on. Ideas undergo
+        categorization, leading to fierce competition among teams striving for
+        top honors. Join us on this exhilarating journey to shape the future of
+        AI in Africa and make a real impact!
+      </p>
+      <h2>Registration start on June 1, 2024</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 my-4 gap-4">
+        <button
+          (click)="setActiveButton('mentor')"
+          class="text-sm px-4 py-2 rounded-full  transition-transform duration-300 ease-in-out  hover:bg-purple-600  border hover:border-none   {{
+            activeButton === 'mentor' ? 'bg-purple-500 ' : ''
+          }}"
+        >
+          Be a Mentor or Advisor
+        </button>
+        <button
+          (click)="setActiveButton('partner')"
+          class="text-sm px-4 py-2 rounded-full transition-transform duration-300 ease-in-out  hover:bg-purple-600  border hover:border-none  lg:ml-5  {{
+            activeButton === 'partner' ? 'bg-purple-500' : ''
+          }}"
+        >
+          Partner with Us
+        </button>
+       
+      </div>
+    </section>
+  </div>
+  <div class="hidden md:grid grid-cols-1 md:grid-cols-3  gap-4">
+    <div *ngFor="let image of images; index as i" class="relative">
+      <div
+        class="h-[250px] bg-white rounded-xl overflow-hidden my-5 bg-gradient-to-br from-purple-500 to-pink-500 animate-gradient p-1"
+        [style.transform]="i % 2 === 0 ? 'translateY(-10%)' : 'translateY(10%)'"
+      >
+        <img class="w-full h-full object-cover rounded-xl" [src]="image" />
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+

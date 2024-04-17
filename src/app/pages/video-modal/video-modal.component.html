@@ -1,0 +1,7 @@
+<div *ngIf="isOpen" class="fixed inset-0 flex items-center justify-center z-50">
+    <div class="modal-overlay"></div>
+    <div class="modal-container bg-white p-4 rounded-lg shadow-lg">
+      <iframe [src]="videoUrl" class="w-full h-64" frameborder="0" allowfullscreen></iframe>
+      <button (click)="close()" class="modal-close-button">Close</button>
+    </div>
+  </div>

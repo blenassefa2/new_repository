@@ -1,0 +1,45 @@
+
+
+.custome:hover .shadow_class {
+    opacity: 0.6;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.custome:hover .img_card {
+  height: 100%;
+  width: 100%;
+  border-radius : 1rem;
+  
+}
+.custome:hover .full-width{
+  height:full;
+}
+
+.custome:hover .image{
+    border-radius: 1rem;
+    transition: border-radius 0.3s ease-in-out;;
+}
+.custome:hover .card_prize{
+    z-index : 20;    
+}
+
+.custom-shape {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+}
+button:hover {
+  cursor:pointer;
+  
+}
+.overflow-auto::-webkit-scrollbar {
+  display: none;
+}
+.img_parent:hover  .team-name {
+  opacity: 1;
+  /* Change text color to black when hovered */
+}
+
+/* For Firefox */
+.overflow-auto {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}

@@ -1,0 +1,128 @@
+<div  class="flex flex-col max-lg:w-64 max-sm:w-48 items-end w-full h-full shadow-2xl bg-gray-900 rounded-xl ">
+  <div class="bg-indigo-900 w-full text-center text-lg flex-none text-white font-semibold  rounded-t-xl p-4">
+    <p >Hacks-Bot</p>
+  </div>
+
+  <div #scrollableContainer [scrollTop]="scrollableContainer.scrollHeight" class="flex-1 max-lg:hidden relative w-full p-6 overflow-y-auto  ">
+    <div class="space-y-2">
+      <div  *ngFor="let message of messages"  >
+        <div *ngIf="message.role === 'bot' " class="chat chat-start">
+          <div class="chat-image avatar">
+            <div class="w-10 rounded-full">
+              <img src="assets/avatar.png" alt="..." />
+            </div>
+          </div>
+          <div class="chat-bubble">
+            <p class="break-words">
+            {{message.content}}
+            </p>
+          </div>
+        </div>
+
+        <div *ngIf="message.role === 'user' " class="chat chat-end">
+
+          <div class="chat-image avatar">
+            <div class="w-10 rounded-full">
+              <img src="assets/user_avatar.png" alt="..." />
+            </div>
+          </div>
+          <div class="chat-bubble">
+            <p class="break-words">
+              {{message.content}}
+            </p>
+            </div>
+        </div>
+
+      </div>
+      <div *ngIf="isChatLoading" class="w-1/2" >
+        <div class="flex items-center mt-4 space-x-3 animate-pulse delay-300">
+          <div class="">
+            <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32 mb-2"></div>
+            <div class="w-48 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <form [formGroup]="chatForm" class="flex-none flex items-center justify-between w-full p-3 border-t border-opacity-10 border-white">
+      <input formControlName="message" type="text" id="chat-input" placeholder="Type your message here..."
+             class="block w-full py-4 pl-4 mx-3 bg-gray-950 border border-white border-opacity-50 rounded-xl focus:text-gray-200"
+             name="message"  />
+      <button id="helpdesk-popup-submit-button"
+              [disabled]="!chatForm.valid"
+              (click)="sendMessage()" >
+        <svg class="w-5 h-5  origin-center text-indigo-800 transform rotate-90" xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 20 20" fill="currentColor">
+          <path
+            d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+        </svg>
+      </button>
+    </form>
+
+
+
+  <div  class="lg:hidden text-white" role="dialog" aria-modal="true">
+    <div class="fixed flex flex-col justify-between inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900  sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+      <div  class="flex  items-center bg-indigo-900 py-6 justify-between">
+
+        <button (click)="closeChat()" type="button" class="rounded-md  text-gray-700">
+          <span class="sr-only">Close menu</span>
+          <svg class="h-6 w-6 text-white ml-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <p >Hacks-Bot</p>
+        <div></div>
+      </div>
+      <div #fullScreenScrollableContainer [scrollTop]="fullScreenScrollableContainer.scrollHeight" class=" h-full p-4 overflow-auto">
+        <div  *ngFor="let message of messages"  >
+          <div *ngIf="message.role === 'bot' " class="chat chat-start">
+            <div class="chat-image avatar ">
+              <div class="w-10 rounded-full">
+                <img src="assets/avatar.png" alt="..." />
+              </div>
+            </div>
+            <div class="chat-bubble break-words">{{message.content}}</div>
+          </div>
+
+          <div *ngIf="message.role === 'user' " class="chat chat-end">
+            <div class="chat-image avatar">
+              <div class="w-10 rounded-full">
+                <img src="assets/user_avatar.png" alt="..." />
+              </div>
+            </div>
+            <div class="chat-bubble break-words">{{message.content}}</div>
+          </div>
+        </div>
+
+
+        <div *ngIf="isChatLoading" class="w-1/2" >
+          <div class="flex items-center mt-4 space-x-3 animate-pulse delay-300">
+            <div class="">
+              <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32 mb-2"></div>
+              <div class="w-48 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <form [formGroup]="chatForm" class="flex-none flex items-center justify-between w-full p-3 border-t border-opacity-10 border-white">
+        <input formControlName="message" type="text"  placeholder="Type your message here..."
+               class="block w-full py-4 pl-4 mx-3 bg-gray-950 border border-white border-opacity-50 rounded-xl focus:text-gray-200"
+               name="message"  />
+        <button
+                [disabled]="!chatForm.valid"
+                (click)="sendMessage()" >
+          <svg class="w-5 h-5  origin-center text-indigo-800 transform rotate-90" xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 20 20" fill="currentColor">
+            <path
+              d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

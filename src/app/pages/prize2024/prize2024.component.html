@@ -1,0 +1,64 @@
+<section id="prize2024"  class="flex fade min-h-screen py-24 max-sm:px-4  max-md:py-16   max-xl:px-12 px-32   flex-col justify-center">
+    <p class="sm:text-[4rem] text-center text-4xl font-semibold  mb-4 text-white">$30K Prizes</p>
+    <div class="flex pb-16  items-center max-lg:flex-wrap max-sm:flex-col gap-x-12 gap-y-8 pt-12 justify-center">
+      <div  class="max-lg:order-2">
+        <app-prize-card [prize]="secondPrize"></app-prize-card>
+      </div>
+      <div  class="max-lg:order-1">
+        <app-prize-card [prize]="firstPrize"></app-prize-card>
+      </div>
+      <div  class="max-lg:order-3">
+        <app-prize-card [prize]="thirdPrize"></app-prize-card>
+      </div>
+    </div>
+    <p class="sm:text-4xl text-center text-2xl font-medium  mb-4 text-white">Other Prize Tracks</p>
+    <div class="grid grid-cols-2  pt-8 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1 items-stretch">
+      <app-track-card *ngFor="let track of tracks" [track]="track" ></app-track-card>
+    </div>
+  
+    <!-- <div class="stack  w-full">
+      <div class="text-center aspect-[96/54] w-4/5 max-sm:w-full card  bg-black">
+        <div class="absolute -inset-[2px] mx-auto bg-gradient-to-r from-yellow-400 to-indigo-600 rounded-2xl" aria-hidden="true"></div>
+        <div class="absolute inset-0 mx-auto h-full w-full bg-indigo-800 rounded-2xl " aria-hidden="true">
+          <div class="relative h-full w-full">
+            <iframe  class="h-full w-full absolute bg-black inset-0  object-center object-contain rounded-2xl" src="https://player.vimeo.com/video/859648871?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="text-center aspect-[94/56] card w-4/5 max-sm:w-full bg-indigo-800">
+      </div>
+      <div class="text-center aspect-[92/58] card w-4/5 max-sm:w-full bg-indigo-800">
+      </div>
+    </div> -->
+  
+  
+    <!-- <div class="bg-black rounded-3xl mt-24">
+      <div class="flex flex-col lg:flex-row items-stretch justify-between lg:px-0  lg:py-20 py-8 2xl:mx-auto 2xl:container">
+        <h2 class="sm:text-4xl lg:hidden text-center text-3xl font-medium  mb-8 text-white">Our Mission</h2>
+        <div class="z-30 relative lg:w-1/2">
+          <div class="hidden bg-gradient-to-t rounded-3xl from-indigo-950  to-black   w-full lg:w-10/12 lg:h-full lg:flex justify-end items-center">
+            <div class="w-full lg:w-auto lg:-mr-32">
+              <img src="assets/group_photo_5.jpg" alt="" class="w-full aspect-[16/12] object-cover rounded-3xl   object-center relative z-30 lg:pl-20 px-6 py-14" />
+            </div>
+          </div>
+          <div class="w-full bg-black max-lg:px-4  h-full lg:hidden">
+            <img src="assets/group_photo_5.jpg" alt="" class="w-full aspect-[16/12] object-cover  object-center   relative z-30 lg:pl-20  py-5 md:py-14" />
+          </div>
+        </div>
+        <div class="lg:bg-gradient-to-t bg-gradient-to-b from-black  to-indigo-950 rounded-3xl  lg:w-1/2 lg:ml-12 lg:p-14 py-6 px-3  flex flex-col items-center">
+          <div>
+            <h2 class="sm:text-4xl max-lg:hidden text-center text-2xl font-medium  mb-8 text-white">Our Mission</h2>
+            <p class="text-gray-300 my-6  leading-tight">A2SV (Africa to Silicon Valley), a hub of innovation in the field of technology education, is a US-based nonprofit academy empowering Africa's tech revolution. With a unique blend of comprehensive software engineering training and tech-driven solutions, A2SV is more than an academy; it's a movement.</p>
+            <p class="text-gray-300 leading-tight">Through collaborations with esteemed African universities like Addis Ababa University and the University of Ghana, and partnerships with tech titans such as Google, Meta, and Databricks, A2SV has created a thriving ecosystem for emerging talent since 2019. Our program is <span class="text-transparent bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text">absolutely free</span>, breaking down financial barriers, nurturing dreams, and democratizing the path to a tech-driven future.</p>
+            <div class="flex sm:justify-start justify-center">
+              <a href="https://a2sv.org"  target="_blank">
+                <button  class="inline-flex sm:justify-center disabled:bg-gray-500 my-6 text-black bg-white border-0 max-sm:px-4 py-2 px-6 focus:outline-none hover:drop-shadow-xl  hover:bg-gray-300 rounded max-sm:text-sm text-lg">Learn More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <app-what-we-provide></app-what-we-provide>
+    </div> -->
+  </section>
+  

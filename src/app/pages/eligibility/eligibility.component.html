@@ -1,0 +1,23 @@
+<section id="eligibility" class=" max-sm:px-4 max-lg:px-12 sm:pb-16 pt-24 pb-32 px-20 overflow-x-hidden">
+  <h2 class="sm:text-4xl text-center text-2xl font-medium  mb-4 text-white">Eligibility</h2>
+  <div class="flex flex-col lg:flex-row gap-x-12   items-center">
+    <div  class="lg:w-1/2 flex-none max-lg:my-6 sm:pb-8 md:mx-8 sm:mt-0   sm:text-left">
+      <p class=" text-gray-300 leading-relaxed max-sm:text-start  ">The hackathon is open to all students located in Africa who are passionate about generative technology and eager to showcase their skills and creativity. To participate, you must meet the following eligibility requirements:</p>
+       <ul>
+        <li *ngFor="let criteria of criterieas">
+              <div class="flex justify-start gap-x-3 py-[8px] items-start mt-6 border-t border-white border-opacity-30">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="flex-none w-8 h-8 text-[#AC6AFF]">
+                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+              </svg>
+              <p class="text-gray-300 leading-relaxed max-sm:text-start">{{criteria.text}}
+              </p>
+            </div>
+        </li>
+      </ul>
+      <div *ngIf="registrationButtonVisible" class="flex mt-12 justify-center">
+        <button onClick="register_modal.showModal()"  class="inline-flex disabled:bg-gray-500  text-black bg-white border-0 max-sm:px-4 py-2 px-6 focus:outline-none hover:drop-shadow-xl  hover:bg-gray-300 rounded max-sm:text-sm text-lg">Register Now</button>
+      </div>
+    </div>
+    <img src="assets/chat%20image.png" class="lg:w-1/2 flex-none max-md:hidden  w-full object-fill object-center rounded-3xl" alt="">
+  </div>
+</section>
